@@ -1,3 +1,4 @@
+using System;
 using System.Net;
 using System.Net.Sockets;
 
@@ -83,8 +84,10 @@ namespace kcp2k
                 // configure buffer sizes
                 ConfigureSocketBufferSizes(maximizeSendReceiveBuffersToOSLimit);
 
-                // connect
+                
                 socket.Connect(remoteEndPoint);
+                
+                
 
                 // set up kcp
                 SetupKcp(noDelay, interval, fastResend, congestionWindow, sendWindowSize, receiveWindowSize, timeout, maxRetransmits);
