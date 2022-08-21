@@ -151,8 +151,7 @@ public class GameNetworkManager : NetworkManager
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
         base.OnServerAddPlayer(conn);
-        //NetworkServer.SendToAll(new Notification { score = "50" });
-        NetworkServer.SendToAll(new NetworkMessages.PlayerJoinMessage { content = "생존자가 입장하였습니다." });
+        NetworkServer.SendToAllWithOutMe(conn.connectionId, new NetworkMessages.PlayerJoinMessage { content = "생존자가 입장하였습니다." });
     }
 
     /// <summary>
