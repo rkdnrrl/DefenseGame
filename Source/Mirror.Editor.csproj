@@ -53,23 +53,23 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Editor\SyncObjectCollectionsDrawer.cs" />
-    <Compile Include="Assets\Mirror\Editor\SyncVarAttributeDrawer.cs" />
-    <Compile Include="Assets\Mirror\Editor\Empty\EnterPlayModeSettingsCheck.cs" />
-    <Compile Include="Assets\Mirror\Editor\Empty\Logging\LogLevelsGUI.cs" />
-    <Compile Include="Assets\Mirror\Editor\Empty\Logging\NetworkLogSettingsEditor.cs" />
-    <Compile Include="Assets\Mirror\Editor\AndroidManifestHelper.cs" />
-    <Compile Include="Assets\Mirror\Editor\Empty\LogLevelWindow.cs" />
     <Compile Include="Assets\Mirror\Editor\Empty\ScriptableObjectUtility.cs" />
     <Compile Include="Assets\Mirror\Editor\SyncVarDrawer.cs" />
+    <Compile Include="Assets\Mirror\Editor\SyncObjectCollectionsDrawer.cs" />
+    <Compile Include="Assets\Mirror\Editor\SyncVarAttributeDrawer.cs" />
     <Compile Include="Assets\Mirror\Editor\NetworkInformationPreview.cs" />
     <Compile Include="Assets\Mirror\Editor\EditorHelper.cs" />
     <Compile Include="Assets\Mirror\Editor\Empty\Logging\LogLevelWindow.cs" />
+    <Compile Include="Assets\Mirror\Editor\Empty\EnterPlayModeSettingsCheck.cs" />
     <Compile Include="Assets\Mirror\Editor\NetworkManagerEditor.cs" />
     <Compile Include="Assets\Mirror\Editor\NetworkBehaviourInspector.cs" />
+    <Compile Include="Assets\Mirror\Editor\Empty\Logging\LogLevelsGUI.cs" />
     <Compile Include="Assets\Mirror\Editor\SceneDrawer.cs" />
     <Compile Include="Assets\Mirror\Editor\InspectorHelper.cs" />
+    <Compile Include="Assets\Mirror\Editor\Empty\Logging\NetworkLogSettingsEditor.cs" />
+    <Compile Include="Assets\Mirror\Editor\AndroidManifestHelper.cs" />
     <Compile Include="Assets\Mirror\Editor\NetworkScenePostProcess.cs" />
+    <Compile Include="Assets\Mirror\Editor\Empty\LogLevelWindow.cs" />
     <Compile Include="Assets\Mirror\Editor\Empty\Logging\LogSettingsEditor.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -325,9 +325,6 @@
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.NRefactory">
-      <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.6.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -336,6 +333,9 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.6.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>

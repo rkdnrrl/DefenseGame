@@ -320,41 +320,6 @@ namespace Mirror
             }
         }
 
-        // send ////////////////////////////////////////////////////////////////
-        /// <summary>Send a message to all clients, even those that haven't joined the world yet (non ready)</summary>
-        public static void SendToAllWithOutMe<T>(int connectionId,T message, int channelId = Channels.Reliable, bool sendToReadyOnly = false)
-            where T : struct, NetworkMessage
-        {
-            if (!active)
-            {
-                Debug.LogWarning("Can not send using NetworkServer.SendToAll<T>(T msg) because NetworkServer is not active");
-                return;
-            }
-
-            // Debug.Log($"Server.SendToAll {typeof(T)}");
-            using (NetworkWriterPooled writer = NetworkWriterPool.Get())
-            {
-                // pack message only once
-                MessagePacking.Pack(message, writer);
-                ArraySegment<byte> segment = writer.ToArraySegment();
-
-                // filter and then send to all internet connections at once
-                // -> makes code more complicated, but is HIGHLY worth it to
-                //    avoid allocations, allow for multicast, etc.
-                int count = 0;
-                foreach (NetworkConnectionToClient conn in connections.Values)
-                {
-                    if (sendToReadyOnly && !conn.isReady || conn.connectionId == connectionId)
-                        continue;
-
-                    count++;
-                    conn.Send(segment, channelId);
-                }
-
-                NetworkDiagnostics.OnSend(message, channelId, segment.Count, count);
-            }
-        }
-
         /// <summary>Send a message to all clients which have joined the world (are ready).</summary>
         // TODO put rpcs into NetworkServer.Update WorldState packet, then finally remove SendToReady!
         public static void SendToReady<T>(T message, int channelId = Channels.Reliable)

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebTransport", "SimpleWebTransport.csproj", "{78FA11DD-4FC7-DAED-FB10-0DED6DD304E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{9A11237F-ED63-616E-DBDE-C39399B84FC5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror", "Mirror.csproj", "{23DD0CF0-29B7-AC30-A8D8-92C62F3CDCBE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Components", "Mirror.Components.csproj", "{71D13B9F-D3EC-4728-1D7E-76C709717257}"
@@ -17,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "where-allocations", "where-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Authenticators", "Mirror.Authenticators.csproj", "{FE982DF2-A18B-B3FA-D092-82F432532FC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{9A11237F-ED63-616E-DBDE-C39399B84FC5}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Mirror.CodeGen", "Unity.Mirror.CodeGen.csproj", "{3A42DF06-B9A7-B41F-B0CA-CA9E0BFDF0FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Editor", "Mirror.Editor.csproj", "{B90BE1F2-5699-A40B-1A8E-B3D3BB5A4A49}"
@@ -24,8 +24,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.CompilerSymbols", "Mirror.CompilerSymbols.csproj", "{B951653C-9E84-0871-26FA-67F299BD0654}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebTransport", "SimpleWebTransport.Player.csproj", "{F1020142-1BAF-ADFE-A306-3B725F97F20F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.Player.csproj", "{64B62C35-3C9E-D400-6E8F-CF47D227C45C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror", "Mirror.Player.csproj", "{5B19DA65-47AA-3B0A-977B-388BFC969CF3}"
 EndProject
@@ -39,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "where-allocations", "where-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mirror.Authenticators", "Mirror.Authenticators.Player.csproj", "{B332D413-B352-86EC-8E01-82A33987FCD2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.Player.csproj", "{64B62C35-3C9E-D400-6E8F-CF47D227C45C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,10 +49,6 @@ Global
 		{78FA11DD-4FC7-DAED-FB10-0DED6DD304E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78FA11DD-4FC7-DAED-FB10-0DED6DD304E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78FA11DD-4FC7-DAED-FB10-0DED6DD304E2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9A11237F-ED63-616E-DBDE-C39399B84FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A11237F-ED63-616E-DBDE-C39399B84FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A11237F-ED63-616E-DBDE-C39399B84FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A11237F-ED63-616E-DBDE-C39399B84FC5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{23DD0CF0-29B7-AC30-A8D8-92C62F3CDCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{23DD0CF0-29B7-AC30-A8D8-92C62F3CDCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23DD0CF0-29B7-AC30-A8D8-92C62F3CDCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -77,6 +73,10 @@ Global
 		{FE982DF2-A18B-B3FA-D092-82F432532FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE982DF2-A18B-B3FA-D092-82F432532FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE982DF2-A18B-B3FA-D092-82F432532FC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A11237F-ED63-616E-DBDE-C39399B84FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A11237F-ED63-616E-DBDE-C39399B84FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A11237F-ED63-616E-DBDE-C39399B84FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A11237F-ED63-616E-DBDE-C39399B84FC5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3A42DF06-B9A7-B41F-B0CA-CA9E0BFDF0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3A42DF06-B9A7-B41F-B0CA-CA9E0BFDF0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A42DF06-B9A7-B41F-B0CA-CA9E0BFDF0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -93,10 +93,6 @@ Global
 		{F1020142-1BAF-ADFE-A306-3B725F97F20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1020142-1BAF-ADFE-A306-3B725F97F20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1020142-1BAF-ADFE-A306-3B725F97F20F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64B62C35-3C9E-D400-6E8F-CF47D227C45C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64B62C35-3C9E-D400-6E8F-CF47D227C45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64B62C35-3C9E-D400-6E8F-CF47D227C45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64B62C35-3C9E-D400-6E8F-CF47D227C45C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B19DA65-47AA-3B0A-977B-388BFC969CF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B19DA65-47AA-3B0A-977B-388BFC969CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B19DA65-47AA-3B0A-977B-388BFC969CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -121,6 +117,10 @@ Global
 		{B332D413-B352-86EC-8E01-82A33987FCD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B332D413-B352-86EC-8E01-82A33987FCD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B332D413-B352-86EC-8E01-82A33987FCD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B62C35-3C9E-D400-6E8F-CF47D227C45C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B62C35-3C9E-D400-6E8F-CF47D227C45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B62C35-3C9E-D400-6E8F-CF47D227C45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B62C35-3C9E-D400-6E8F-CF47D227C45C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
