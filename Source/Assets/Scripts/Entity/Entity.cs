@@ -6,7 +6,9 @@ using Mirror;
 public class Entity : NetworkBehaviour
 {
     [SerializeField]public Animator anim;
-    [SerializeField]protected float maxSpeed;
+    public const float walkSpeed = 5;
+    public const float runSpeed = 10;
+    [SerializeField]protected float currentSpeed;
 
     [HideInInspector]public Transform target;
     private Vector3 movePosition;
@@ -54,7 +56,7 @@ public class Entity : NetworkBehaviour
         }
 
         diff.Normalize();
-        Move(diff.x, diff.z);
+        Move(diff.x, diff.z, 1);
     }
 
     void SetRandomMovePosition()
@@ -73,20 +75,20 @@ public class Entity : NetworkBehaviour
         }
     }
 
-    public void Move(float x, float z)
+    public void Move(float x, float z, float speed)
     {
         if (!isLocalPlayer) return;
 
+
         Vector3 normalMove = new Vector3(x, 0, z).normalized;
 
-        //if(x != 0 && z != 0){
-            
-        //}
+        if (speed == 0 && normalMove.magnitude != 0) speed = walkSpeed;
 
-        if(anim != null) anim.SetFloat("Move", normalMove.magnitude);
+
+        if(anim != null) anim.SetFloat("Move", speed);
 
         //transform.position += normalMove * Time.deltaTime;
-        transform.Translate(normalMove * maxSpeed * Time.deltaTime);
+        transform.Translate(normalMove * speed *  Time.deltaTime);
     }
 
     public virtual void OnTriggerEnter(Collider other)

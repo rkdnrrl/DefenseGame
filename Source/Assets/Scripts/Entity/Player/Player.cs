@@ -55,7 +55,15 @@ public class Player : Entity
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
-        Move(horizontal, vertical);
+
+        float speed = 0;
+
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = runSpeed;
+        }
+
+        Move(horizontal, vertical, speed);
     }
 
     public override void OnTriggerEnter(Collider other)
