@@ -58,24 +58,70 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Scripts\Entity\Entity.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\ExportLib\InfinityPBR\Demo Scripts\SFBPingPong.cs" />
+    <Compile Include="Assets\ExportLib\InfinityPBR\Audio Clip Combiner\Scripts\BackgroundSounds.cs" />
+    <Compile Include="Assets\ExportLib\InfinityPBR\Audio Clip Combiner\Scripts\AudioClipCombinerController.cs" />
+    <Compile Include="Assets\ExportLib\InfinityPBR\Demo Scripts\SFB_AudioManager.cs" />
+    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\LensFlares\Scripts\ScreenSpacePlacement.cs" />
+    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\SharedAssets\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\SharedAssets\Scripts\AutoLoadPipelineAsset.cs" />
+    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\CameraStacking\3D Skybox\Scripts\SkyboxCamera.cs" />
+    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\RendererFeatures\KeepFrame\KeepFrameFeature.cs" />
+    <Compile Include="Assets\Scripts\Entity\Structure\Structure.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\Creature.cs" />
+    <Compile Include="Assets\Scripts\Entity\Structure\Barrel.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\AI\FriendlyAI.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\AI\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\Player\PlayerMoveController.cs" />
+    <Compile Include="Assets\Scripts\Entity\Structure\Rock.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\AI\AI.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\CreatureMoveController.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\CreatureInteraction.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\Player\PlayerInteraction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\ExportLib\InfinityPBR\__READ ME &amp; Support &amp; Instructions\SOUND LIBRARY READ ME.txt" />
     <None Include="Assets\ScriptTemplates\51-Mirror__Network Authenticator-NewNetworkAuthenticator.cs.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\ScriptTemplates\56-Mirror__Network Discovery-NewNetworkDiscovery.cs.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Mirror\Version.txt" />
     <None Include="Assets\Mirror\Readme.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\ScriptTemplates\57-Mirror__Network Transform-NewNetworkTransform.cs.txt" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\ScriptTemplates\52-Mirror__Network Behaviour-NewNetworkBehaviour.cs.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Mirror\Notice.txt" />
+    <None Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\SharedAssets\Shaders\3DText.shader" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\License.txt" />
     <None Include="Assets\ScriptTemplates\55-Mirror__Network Room Player-NewNetworkRoomPlayer.cs.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\ScriptTemplates\53-Mirror__Custom Interest Management-CustomInterestManagement.cs.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\ScriptTemplates\50-Mirror__Network Manager-NewNetworkManager.cs.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\ScriptTemplates\54-Mirror__Network Room Manager-NewNetworkRoomManager.cs.txt" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -735,29 +781,29 @@
       <Project>{11FFA40D-7CC6-B2AA-304D-6C13450B2FF0}</Project>
       <Name>kcp2k.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="where-allocations.Player.csproj">
-      <Project>{D28335B4-3319-8BD9-45CF-C84A177B5878}</Project>
-      <Name>where-allocations.Player</Name>
+    <ProjectReference Include="Mirror.Authenticators.Player.csproj">
+      <Project>{B332D413-B352-86EC-8E01-82A33987FCD2}</Project>
+      <Name>Mirror.Authenticators.Player</Name>
     </ProjectReference>
     <ProjectReference Include="Telepathy.Player.csproj">
       <Project>{FE7C972B-EFD6-75C0-0BF7-E6303B2D8098}</Project>
       <Name>Telepathy.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="where-allocations.Player.csproj">
+      <Project>{D28335B4-3319-8BD9-45CF-C84A177B5878}</Project>
+      <Name>where-allocations.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Mirror.Components.Player.csproj">
       <Project>{40F6C3B8-4D4A-B0B1-92B5-97D0E1F86AAC}</Project>
       <Name>Mirror.Components.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="Mirror.Examples.Player.csproj">
-      <Project>{88B77F6E-14BD-9013-1178-6A3E4771056F}</Project>
-      <Name>Mirror.Examples.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Authenticators.Player.csproj">
-      <Project>{B332D413-B352-86EC-8E01-82A33987FCD2}</Project>
-      <Name>Mirror.Authenticators.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Mirror.Player.csproj">
       <Project>{5B19DA65-47AA-3B0A-977B-388BFC969CF3}</Project>
       <Name>Mirror.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Mirror.Examples.Player.csproj">
+      <Project>{88B77F6E-14BD-9013-1178-6A3E4771056F}</Project>
+      <Name>Mirror.Examples.Player</Name>
     </ProjectReference>
     <ProjectReference Include="SimpleWebTransport.Player.csproj">
       <Project>{F1020142-1BAF-ADFE-A306-3B725F97F20F}</Project>

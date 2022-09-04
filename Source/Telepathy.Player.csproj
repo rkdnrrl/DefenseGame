@@ -56,22 +56,22 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\ThreadFunctions.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Empty\Logger.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\EventType.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Utils.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Pool.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Empty\Message.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Empty\SafeQueue.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Log.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Common.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\ConnectionState.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\NetworkStreamExtensions.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Empty\Logger.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\MagnificentSendPipe.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Server.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\NetworkStreamExtensions.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\ConnectionState.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\MagnificentReceivePipe.cs" />
-    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Empty\ThreadExtensions.cs" />
     <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Client.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Pool.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Empty\ThreadExtensions.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Common.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\ThreadFunctions.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\EventType.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Utils.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Empty\SafeQueue.cs" />
+    <Compile Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\MagnificentReceivePipe.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Runtime\Transports\Telepathy\Telepathy\Telepathy.asmdef" />
