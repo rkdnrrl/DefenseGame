@@ -56,31 +56,31 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
-    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\Scripts\Entity\Entity.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
-    <Compile Include="Assets\ExportLib\InfinityPBR\Demo Scripts\SFBPingPong.cs" />
-    <Compile Include="Assets\ExportLib\InfinityPBR\Audio Clip Combiner\Scripts\BackgroundSounds.cs" />
-    <Compile Include="Assets\ExportLib\InfinityPBR\Audio Clip Combiner\Scripts\AudioClipCombinerController.cs" />
-    <Compile Include="Assets\ExportLib\InfinityPBR\Demo Scripts\SFB_AudioManager.cs" />
-    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\LensFlares\Scripts\ScreenSpacePlacement.cs" />
-    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\SharedAssets\Scripts\FirstPersonController.cs" />
-    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\SharedAssets\Scripts\AutoLoadPipelineAsset.cs" />
     <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\CameraStacking\3D Skybox\Scripts\SkyboxCamera.cs" />
-    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\RendererFeatures\KeepFrame\KeepFrameFeature.cs" />
-    <Compile Include="Assets\Scripts\Entity\Structure\Structure.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\AI\AI.cs" />
+    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\SharedAssets\Scripts\FirstPersonController.cs" />
     <Compile Include="Assets\Scripts\Entity\Creature\Creature.cs" />
+    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\SharedAssets\Scripts\AutoLoadPipelineAsset.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\CreatureMoveController.cs" />
+    <Compile Include="Assets\ExportLib\InfinityPBR\Audio Clip Combiner\Scripts\BackgroundSounds.cs" />
+    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\LensFlares\Scripts\ScreenSpacePlacement.cs" />
+    <Compile Include="Assets\Samples\Universal RP\12.1.7\URP Package Samples\RendererFeatures\KeepFrame\KeepFrameFeature.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\Player\PlayerMoveController.cs" />
+    <Compile Include="Assets\Scripts\Entity\Structure\Structure.cs" />
+    <Compile Include="Assets\Scripts\Entity\Creature\Player\PlayerInteraction.cs" />
     <Compile Include="Assets\Scripts\Entity\Structure\Barrel.cs" />
+    <Compile Include="Assets\ExportLib\InfinityPBR\Demo Scripts\SFB_AudioManager.cs" />
     <Compile Include="Assets\Scripts\Entity\Creature\AI\FriendlyAI.cs" />
+    <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\Entity\Structure\Rock.cs" />
+    <Compile Include="Assets\ExportLib\InfinityPBR\Audio Clip Combiner\Scripts\AudioClipCombinerController.cs" />
+    <Compile Include="Assets\ExportLib\InfinityPBR\Demo Scripts\SFBPingPong.cs" />
     <Compile Include="Assets\Scripts\Entity\Creature\AI\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\Entity\Creature\Player\Player.cs" />
-    <Compile Include="Assets\Scripts\Entity\Creature\Player\PlayerMoveController.cs" />
-    <Compile Include="Assets\Scripts\Entity\Structure\Rock.cs" />
-    <Compile Include="Assets\Scripts\Entity\Creature\AI\AI.cs" />
-    <Compile Include="Assets\Scripts\Entity\Creature\CreatureMoveController.cs" />
     <Compile Include="Assets\Scripts\Entity\Creature\CreatureInteraction.cs" />
-    <Compile Include="Assets\Scripts\Entity\Creature\Player\PlayerInteraction.cs" />
+    <Compile Include="Assets\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Scripts\Entity\Entity.cs" />
+    <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll" />
